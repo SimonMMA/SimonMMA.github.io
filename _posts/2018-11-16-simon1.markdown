@@ -1,7 +1,50 @@
 ---
 layout: post
-title:  "Blog post 1"
+title: "Examination 1"
+comments: true
+# other options
 date:   2018-11-15 06:02:51 -0600
 categories: jekyll update
+my_number: 5
 ---
-HEJ
+# Mina åsikter om site generators och pre-compiling CSS
+
+* Vad jag tycker om att använda sig av pre-compiling CSS.
+  * Jämfört med vanlig CSS så blir det mycket mindre kod att hålla koll på
+  * Jag har bara använt mig av att ändra på bas grejerna i vendor katalogen för att prova samt lagt till en border vid min lista och h1 text färg och stil.
+  * Fördelar
+    * Bättre organizerat och lättare att hitta i
+    * Mindre belastning på hemsidan
+  * Nackdelar
+    * Inte lika svart på vitt som css är
+* Vad jag tycker om att använda static site generators.
+  * Jag tycker att dom passar till webplatser där det krävs många olika sidor som ska skapas och underhållas.
+* robots.txt är en text som håller ute bottar av olika slag. Jag har ställt in min till att hålla ute alla robotar från sidan för denna uppgiften
+* humans.txt är en vanlig txt fil som innehåller information om sidan och skaparen av sidan mm. Detta är mycket för säkerheten av sidan så en txt fil är väldigt svår att hacka.
+* Jag använde mig av Disqus för att få in kommentarer, det var en extremt smidig 2 stegs guide för att få in kommentarerna på min sida.
+* Open graph skrickar med information ifall man länkar till sidan och innehåller kortfattad information om vad dom blir länkade till och kan ha bilder mm som följer med i länken.
+
+<div id="disqus_thread"></div>
+<script>
+{% if page.comments %}
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://simonmma.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
+
+
+{{ page.my_number }}

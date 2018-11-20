@@ -12,13 +12,22 @@ $spacing-unit:     30px !default;
 
 $text-color:       #111 !default;
 $background-color: #cf8282 !default;
-$brand-color:      #2a7ae2 !default;
+$brand-color:      #124485 !default;
 
-$grey-color:       #828282 !default;
+$grey-color:       #5a5a5a !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
-$table-text-align: left !default;
+$table-text-align: center !default;
+
+ul { 
+  display: block;
+  border: 1px dashed cornflowerblue;
+}
+h1{
+  color: chartreuse;
+  font-style: italic;
+}
 
 // Width of the content area
 $content-width:    800px !default;

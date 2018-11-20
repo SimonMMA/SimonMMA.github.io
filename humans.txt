@@ -1,0 +1,28 @@
+/* TEAM */
+
+                            
+Site creator: Simon Lundberg.
+
+                            
+Contact: sl223pg [at] student.lnu.se
+
+                            
+From: Korsberga, Sweden
+
+
+/* THANKS */
+
+							
+LNU universitet
+
+
+/* SITE */
+
+                            
+Last update: 2018/11/19 
+
+                            
+Standards: HTML, CSS
+
+                            
+Software: Visual Code Studio, Notepad, Github
